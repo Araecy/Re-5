@@ -1,37 +1,34 @@
-$main-page-color: rgb(66, 66, 66);
-
-// mixin format: @include main-font-settings(000, px);
-@mixin main-font-settings($fontWeight, $fontSize) {
-  font-family: "Nunito", sans-serif;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-}
-
 body {
   height: 10000px;
   margin: 0 !important;
   padding: 0 !important;
-  @include main-font-settings(400, 14px);
-  background-color: $main-page-color;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: rgb(66, 66, 66);
 }
-nav {
-  @include main-font-settings(600, 20px);
 
+nav {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
   position: sticky;
   top: 0;
-
   height: 50px;
   width: 100%;
 }
+
 nav > ul {
   margin: 10px 40px 0 0;
   padding: 0;
   float: right;
 }
+
 nav > ul > li {
   display: inline;
   list-style-type: none;
 }
+
 nav > ul > li > a {
   padding: 0 20px 0 0;
   text-decoration: none;
@@ -48,8 +45,10 @@ section {
   border-radius: 10px;
   background: rgb(248, 248, 248);
   border: 1px solid silver;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 25px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 25px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 25px rgba(0, 0, 0, 0.04);
 }
+
 section > p,
 h1,
 h2,
@@ -59,12 +58,7 @@ h5 {
   margin: 10px 40px;
 }
 
-
-// Header
-// ---------------
-
 #header {
-    // position: absolute;
-    background-color: rgb(107, 107, 107);
-    height: 200px;
+  background-color: rgb(107, 107, 107);
+  height: 200px;
 }
