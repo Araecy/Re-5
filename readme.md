@@ -1,3 +1,3 @@
 # ProjectWeek2  
-### ------------
-![Project beschrijving](unknown.png)
+### Project:  
+![Project beschrijving](unknown.png)  
